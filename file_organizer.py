@@ -2,11 +2,11 @@ import os
 import shutil
 
 def menu():
-    path = input('Insert the path or press Q to exit the program: ')
+    path = input('Insert the path or press M to exit the program: ')
     while not path_validation(path):
-        if path == 'Q':
+        if path == 'M':
             exit()
-        path = input('Insert the path or press Q to exit the program: ')
+        path = input('Insert the path or press M to exit the program: ')
     print('The path is valid')
     return path
 
