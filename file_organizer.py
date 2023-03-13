@@ -1,11 +1,12 @@
 import os
 import shutil
+
 def menu():
-    path = input('Insert the path or press p to exit the program: ')
+    path = input('Insert the path or press Q to exit the program: ')
     while not path_validation(path):
-        if path == 'p':
+        if path == 'Q':
             exit()
-        path = input('Insert the path or press p to exit the program: ')
+        path = input('Insert the path or press Q to exit the program: ')
     print('The path is valid')
     return path
 
@@ -22,9 +23,12 @@ def list_all_files(path: str) -> list:
     return files
 
 def extract_file_extension(file: str) -> str:
-
-    filename, extension = os.path.splitext(file)
-    return extension
+    indexes = [i for i, ch in enumerate(file) if ch == '.']
+    if indexes:
+        file_extension = file[indexes[-1]::]
+        return file_extension
+    else:
+        return 'no extension'
 
 def map_extension_to_folder(path: str) -> dict:
     extension_mapping = {path + '\\'+ dir:FILE_EXT_TYPES[i] for i,dir in enumerate(DIR_TYPES)}
@@ -43,19 +47,19 @@ if __name__ == '__main__':
                     ]
     path = menu()
     mapping = map_extension_to_folder(path)
-    create_dirs(path)
     # print(mapping)
+    create_dirs(path)
     files = list_all_files(path)
     # print(files)
     for file in files:
         file_extension = extract_file_extension(file)
+        # print(file_extension)
         for k,v in mapping.items():
             if file_extension in v:
                 try:
                     shutil.move(path + '\\' + file, k)
                 except:
                     print(file + ' cannot be moved!')
-
 # File organizer
 # Input data:
 #     - Path to folder
