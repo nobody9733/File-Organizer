@@ -40,7 +40,7 @@ if __name__ == '__main__':
                  'Word_files', 'Excel_files', 'Exe_files',
                  'Archived_files', 'CDR_files'
                  ]
-    FILE_EXT_TYPES = [['.jpg', '.jpeg', '.png', '.JPG'], ['.mp4', '.mov', '.MOV','.avi'], ['.pdf', '.PDF'],
+    FILE_EXT_TYPES = [['.jpg', '.jpeg', '.png', '.JPG', '.GIF', '.webp'], ['.mp4', '.mov', '.MOV','.avi'], ['.pdf', '.PDF'],
                       '.mp3', '.txt', '.py',
                       ['.doc', '.docx'], ['.csv', '.xlsx', 'xls'], '.exe',
                       ['.7z', '.zip'], '.cdr'
