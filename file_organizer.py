@@ -42,7 +42,7 @@ if __name__ == '__main__':
                  ]
     FILE_EXT_TYPES = [['.jpg', '.jpeg', '.png', '.JPG', '.GIF', '.webp'], ['.mp4', '.mov', '.MOV','.avi'], ['.pdf', '.PDF'],
                       '.mp3', '.txt', '.py',
-                      ['.doc', '.docx'], ['.csv', '.xlsx', 'xls'], '.exe',
+                      ['.doc', '.docx'], ['.csv', '.xlsx', '.xls'], '.exe',
                       ['.7z', '.zip']
                     ]
     path = menu()
