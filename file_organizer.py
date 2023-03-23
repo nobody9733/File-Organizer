@@ -57,11 +57,4 @@ if __name__ == '__main__':
                     shutil.move(path + '\\' + file, k)
                 except:
                     print(file + ' cannot be moved!')
-# File organizer
-# Input data:
-#     - Path to folder
-# Const:
-#     - DIR_NAMES
-#     - FILE EXTENSION
-# OUTPUT:
-#     - Move files in the specific folder
+   
