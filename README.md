@@ -1,7 +1,7 @@
 # Organizator de fisiere
 Tehnologiile utilizate sunt: Python
 
-Poiectul este un script care de ajută la aranjeaza de fisiere electronice
-la scurtarea de timp
+Poiectul este un script care automatiseaza aranjarea de fisiere electronice
+ca să nu mai 
 
-Pentru initierea proiectului trebuie calea folderului 
+Pentru initierea proiectului trebuie rulat file_organizer.py și dat o cale către folderul dorit
