@@ -41,13 +41,13 @@ if __name__ == '__main__':
                     ]
     path = menu()
     mapping = map_extension_to_folder(path)
-    print(mapping)
+#     print(mapping)
     create_dirs(path)
     files = list_all_files(path)
-    print(files)
+#     print(files)
     for file in files:
         file_extension = extract_file_extension(file)
-        print(file_extension)
+#         print(file_extension)
         for k,v in mapping.items():
             if file_extension in v:
                 try:
